@@ -27,4 +27,4 @@ p, bob, data2, write
 
 The definition of each line within the file defines that:
 1. `alice` has `read` access to `data`
-2. `bob` has `write` access to `data2
+2. `bob` has `write` access to `data2`
