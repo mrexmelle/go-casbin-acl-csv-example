@@ -21,7 +21,7 @@ p, bob, data2, write
 ```
 
 The definition of each line within the file defines that:
-1. `alice` has `read` access to `data`
+1. `alice` has `read` access to `data1`
 2. `bob` has `write` access to `data2`
 
 # Running
@@ -33,12 +33,12 @@ $ go run server/main.go <user> <resource> <action>
 The following table provides the expected result of `go run` execution
 | User | Resource | Action | Result |
 | --- | --- | --- | --- |
-| alice | data | read | Access allowed |
-| alice | data | write | Access denied |
+| alice | data1 | read | Access allowed |
+| alice | data1 | write | Access denied |
 | alice | data2 | read | Access denied |
 | alice | data2 | write | Access denied |
-| bob | data | read | Access denied |
-| bob | data | write | Access denied |
+| bob | data1 | read | Access denied |
+| bob | data1 | write | Access denied |
 | bob | data2 | read | Access denied |
 | bob | data2 | write | Access allowed |
 | charlie | data1 | red | Access denied |
